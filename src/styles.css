@@ -1,0 +1,42 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.task-manager {
+  display: flex;
+}
+
+.task-column {
+  flex: 1;
+  border: 1px solid #ddd;
+  margin: 8px;
+  padding: 8px;
+  background-color: #fff;
+}
+
+.task-column h2 {
+  margin-bottom: 8px;
+}
+
+.task-card {
+  opacity: 1;
+  cursor: move;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 8px;
+  margin: 4px 0;
+  background-color: #fff;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.task-card:hover {
+  background-color: #f0f8ff;
+}
