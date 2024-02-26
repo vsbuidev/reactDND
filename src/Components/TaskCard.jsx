@@ -4,7 +4,7 @@ import { useDrag } from "react-dnd";
 const TaskCard = ({ id, content }) => {
   const [{ isDragging }, drag] = useDrag({
     type: "TASK",
-    item: { id, column: "todo" }, // Specify the source column
+    item: { id, column: "todo" },
     collect: (monitor) => ({
       isDragging: monitor.isDragging(),
     }),
@@ -23,7 +23,7 @@ const TaskCard = ({ id, content }) => {
         backgroundColor: "#fff",
       }}
     >
-      {content}
+      {id && content}
     </div>
   );
 };

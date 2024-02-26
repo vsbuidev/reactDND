@@ -20,9 +20,10 @@ const TaskColumn = ({ title, tasks, moveTask }) => {
       }}
     >
       <h2>{title}</h2>
-      {tasks.map((task) => (
-        <TaskCard key={task.id} id={task.id} content={task.content} />
-      ))}
+      {tasks &&
+        tasks.map((task) => (
+          <TaskCard key={task.id} id={task.id} content={task.content} />
+        ))}
     </div>
   );
 };
